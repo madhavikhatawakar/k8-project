@@ -1,17 +1,20 @@
+--- 
 apiVersion: extensions/v1beta1
 kind: Deployment
-metadata:
+metadata: 
   name: webapp1
-spec:
+spec: 
   replicas: 1
-  template:
-    metadata:
-      labels:
+  template: 
+    metadata: 
+      labels: 
         app: webapp1
-    spec:
-      containers:
-      - name: webapp1
-        image: nginx:1.7.9
-        ports:
-        - containerPort: 80
+    spec: 
+      containers: 
+        - 
+          image: "nginx:1.7.9"
+          name: webapp1
+          ports: 
+            - 
+              containerPort: 80
 		
